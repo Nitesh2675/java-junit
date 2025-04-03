@@ -32,7 +32,7 @@ public class ListManagerTest {
         listManager.addElement(list, 12); //1
         listManager.addElement(list, 13); //1
         boolean a= listManager.removeElement(list,10);
-        Assertions.assertEquals(true, a, "List size should be 3.");
+        Assertions.assertEquals(true,a);
     }
 
 
