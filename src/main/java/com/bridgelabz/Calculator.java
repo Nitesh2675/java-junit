@@ -14,7 +14,12 @@ public class Calculator {
     return a*b;
     }
 
-    public int divide(int a, int b) {
-        return a/b;
+    public int divide(int a, int b) throws ArithmeticException {
+        if(b==0){
+            throw new ArithmeticException("Division by zero");
+        }
+        else{
+            return a/b;
+        }
     }
 }
